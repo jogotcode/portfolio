@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  overflow-x:hidden;
+}
+
+#Maincontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+
+}
+
+
+.TopHalfText{
+  width: 100%;
+  height:100%;
+}
+
+
+
+#Top-Half{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+
+
+
+.top_bar
+{
+  height:43px;
+  width: 100VW;
+  background: rgba(255, 255, 255, 0.1);
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0px 0px 20px rgba(110, 110, 110, 0.331);
+}
+
+#topBar-Portrait
+{
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px ;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.Page_id
+{
+  color:red;
+  margin: 20px;
+  font-weight:bold;
+}
+
+
+
+.ImgSetings1{
+  margin-top: 45px;
+  height: 435px;
+  width:50%;
+  object-fit: cover;
+}
+#LandingImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: .5%;
+}
+
+.ImgSetings2{
+  width:100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: height 1s , box-shadow 1s;
+  border-radius: 10px;
+}
+a{
+  width: 100%;
+  height: 100%;
+}
+
+.ImgSetings2:hover {
+  height: 300px;
+}
+
+
+
+#displayoptions{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Devoption{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 55px;
+  box-shadow: 20px 0px 10px rgba(0, 0, 0, 1);
+  margin: 2%;
+  position: absolute;
+}
+#AboutMe{
+  color:white;
+  width: 100%;
+  height: 220px;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rel{
+  position: relative;
+}
+
+
+#DevType{
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  
+}
+#DevType::before{
+  content: "[empty]";
+  animation: infinite 8s DevtypeAnim;
+}
+
+
+.frosted-fancy {
+  padding: 1.2rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+  backdrop-filter: blur(12px) saturate(140%);
+  -webkit-backdrop-filter: blur(12px) saturate(140%);
+  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+  position: relative;
+  overflow: hidden;
+}
+
+.frosted {
+  width: 230px;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 1;
+
+  /* translucent panel */
+  background: rgba(255,255,255,0.12); /* light glass; use rgba(0,0,0,0.12) for dark) */
+
+  /* the magic: blur the stuff behind the element */
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+
+  /* thin border + subtle shadow for depth */
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: 0 6px 20px rgba(2,6,23,0.45);
+  color: #fff;
+}
+
+@keyframes DevtypeAnim {
+  from{content:"[]";}
+  20%{content:"[Gamer]";}
+  40%{content:"[Designer]";}
+  60%{content:"[Musician]";}
+  80%{content:"[Developer]";}
+  to{content:"[Human]";}
+  
+}
